@@ -1,16 +1,40 @@
-# Django Task API
+# 🧠 Task API - Django REST
 
-API REST desarrollada con Django Rest Framework para gestionar tareas.
+API RESTful para gestión de tareas desarrollada con Django REST Framework.  
+Incluye autenticación por token, documentación interactiva con Swagger y operaciones CRUD completas.
 
-## Tecnologías
+---
+
+## 🚀 Features
+
+- Crear, listar, actualizar y eliminar tareas (CRUD)
+- Autenticación de usuarios con token
+- Endpoints protegidos
+- Documentación interactiva con Swagger
+- Estructura profesional de API REST
+
+---
+
+## 🛠️ Tecnologías
+
 - Python
 - Django
-- Django Rest Framework
-- SQLite
+- Django REST Framework
+- Token Authentication
+- Swagger (drf-yasg)
 
-## Instalación
+---
 
-git clone ...
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+## 🔐 Autenticación
+
+La API utiliza autenticación por token.
+
+### Obtener token:
+
+POST `/api/token/`
+
+```json
+{
+  "username": "tu_usuario",
+  "password": "tu_password"
+}
